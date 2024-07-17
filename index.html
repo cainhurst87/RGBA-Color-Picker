@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+    <title>Color Picker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+<body>
+    
+    <div id="container-square">
+
+        <div class="container-slider">
+            <label for="red">R</label>
+            <input type="range" min="0" max="255" value="0" id="red" />
+        </div>
+
+        <div class="container-slider">
+            <label for="green">G</label>
+            <input type="range" min="0" max="255" value="0" id="green" />
+        </div>
+
+        <div class="container-slider">
+            <label for="blue">B</label>
+            <input type="range" min="0" max="255" value="0" id="blue" />
+        </div>
+
+        <div class="container-slider">
+            <label for="opacity">O</label>
+            <input type="range" min="0" max="1" value="1" step="0.01" id="opacity" />
+        </div>
+
+        <div class="container-result">
+            <input type="text" value="rgb(0,0,0)" readonly />
+            <button id="copy-btn">Copy Color Code</button>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>
