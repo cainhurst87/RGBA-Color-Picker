@@ -39,3 +39,19 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(`Red: ${rColor.value}, Green: ${gColor.value}, Blue: ${bColor.value}`);
     }, 1000);
 });
+
+function reduceCopy(){
+    const btn = document.getElementById("copy-btn");
+    if(window.innerWidth < 845){
+        btn.textContent = 'Copy';
+    } else {
+        btn.textContent = 'Copy Color Code';
+    }
+}
+
+window.addEventListener('load', reduceCopy);
+window.addEventListener('resize', reduceCopy);
+
+
+
+
